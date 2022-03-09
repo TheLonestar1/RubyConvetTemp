@@ -10,10 +10,10 @@ def tempe(type, _value, types)
   case type
   when 'K'
     types['C'] = (types[type].to_i - 273.15).round
-    types['F'] = (types[type].to_i * 1.8 - 459.67).round
+    types['F'] = ((types[type].to_i * 1.8) - 459.67).round
   when 'C'
     types['K'] = (types[type].to_i + 273.15).round
-    types['F'] = (types[type].to_i * 1.8 + 32).round
+    types['F'] = ((types[type].to_i * 1.8) + 32).round
   when 'F'
     types['C'] = ((types[type].to_i - 32) / 1.8).round
     types['K'] = ((types[type].to_i + 459.67) / 1.8).round
