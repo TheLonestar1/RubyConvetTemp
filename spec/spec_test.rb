@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '/home/lones/Ruby/lib/Temp'
+require_relative '/home/lones/Ruby/lib/temp'
 
 describe 'Temperature Converter' do
   it 'Celsii to Kelvin and Farengate' do
